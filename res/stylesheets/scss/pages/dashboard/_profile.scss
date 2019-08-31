@@ -1,0 +1,22 @@
+#body23 {
+  #cover-container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    @media #{$mobile} {
+      flex-direction: column;
+      align-items: flex-start;
+      p {
+        margin-top: 15px;
+        margin-left: 0 !important;
+      }
+    }
+    p {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: $lightgreen;
+      margin-left: 20px;
+    }
+  }
+}

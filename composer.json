@@ -1,0 +1,6 @@
+{
+    "require": {
+        "facebook/graph-sdk": "^5.7",
+        "jublonet/codebird-php": "^3.1"
+    }
+}

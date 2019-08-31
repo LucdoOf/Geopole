@@ -1,0 +1,114 @@
+#body3 {
+  background-color: white;
+  border: 1px solid $bordergray;
+  #post-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #post-description {
+    font-size: 1.2em;
+    color: $darkgray;
+    margin-bottom: 10px;
+  }
+  #post-content {
+    font-size: 1.15em;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  #categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .category {
+      margin: 5px;
+    }
+  }
+  h1 {
+    font-size: 3.25em;
+    line-height: 0.8em;
+    text-align: center;
+    margin: 30px 0px;
+    margin-top: 30px;
+  }
+  #post_author, #post_date, #post_viewed {
+    font-size: 1.15em;
+    margin: 0px;
+    color: $darkgray;
+  }
+  #post_viewed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .post_category {
+    display: inline-block;
+    margin: 0px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    background-color: #E2E2E2;
+    color: #B2B2B2;
+    font-style: normal;
+    font-size: 20px;
+  }
+  .editPost {
+    color: var(--themeColor);
+    margin-top: 15px;
+    font-size: 20px;
+    display: block;
+  }
+  #post_footer {
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    .formRating {
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
+      margin: 0px;
+      margin-right: 10px;
+      .formRating_star {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  #post-social {
+    margin-top: 10px;
+  }
+  #post-comments {
+    margin-top: 30px;
+    border-top: 1px solid $bordergray;
+    padding-top: 30px;
+    width: 100%;
+    h3 {
+      margin-bottom: 10px;
+    }
+    #comment-form {
+      width: 100%;
+      margin-bottom: 20px;
+      .textarea-input {
+        width: 100%;
+        height: 80px;
+        margin-bottom: -5px;
+      }
+    }
+    #first-comment {
+      margin-bottom: 10px;
+      font-size: 1em;
+      font-weight: bold;
+    }
+    #comments-ctn {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .editGray {
+    cursor: default !important;
+  }
+}

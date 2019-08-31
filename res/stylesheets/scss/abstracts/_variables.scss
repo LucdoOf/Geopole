@@ -1,0 +1,42 @@
+$bordergray: #E6E6E6;
+$lightgray: #F5F5F5;
+$gray: #B4B4B4;
+$darkgray: #353535;
+$darkergray: #2D2D2D;
+$red:#d85a5a;
+$darkRed: #d8284a;
+$darkerRed: #400f12;
+$themeColor : #9ACC74;
+$green: #99D28D;
+$blue: #59AAA8;
+$darkblue: #448280;
+$darkerBlue: darken($blue, 50%);
+$darkGreen: #85BE79;
+$darkerGreen: darken($green, 50%);
+$darkestGreen: #0f3312;
+$white: #f4f5f6;
+$lightgreen: #daeae2;
+$lightred: #ffbbbb;
+
+$mobile: "(max-device-width: 1000px)";
+
+/* Color Theme Swatches in Hex */
+.Project-#10-The-Palouse-1-hex { color: #014040; }
+.Project-#10-The-Palouse-2-hex { color: #012626; }
+.Project-#10-The-Palouse-3-hex { color: #405927; }
+.Project-#10-The-Palouse-4-hex { color: #BDD959; }
+.Project-#10-The-Palouse-5-hex { color: #91A644; }
+
+/* Color Theme Swatches in RGBA */
+.Project-#10-The-Palouse-1-rgba { color: rgba(1, 63, 63, 1); }
+.Project-#10-The-Palouse-2-rgba { color: rgba(0, 38, 38, 1); }
+.Project-#10-The-Palouse-3-rgba { color: rgba(64, 89, 39, 1); }
+.Project-#10-The-Palouse-4-rgba { color: rgba(189, 216, 88, 1); }
+.Project-#10-The-Palouse-5-rgba { color: rgba(144, 165, 67, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Project-#10-The-Palouse-1-hsla { color: hsla(180, 96, 12, 1); }
+.Project-#10-The-Palouse-2-hsla { color: hsla(180, 96, 7, 1); }
+.Project-#10-The-Palouse-3-hsla { color: hsla(90, 38, 25, 1); }
+.Project-#10-The-Palouse-4-hsla { color: hsla(73, 62, 59, 1); }
+.Project-#10-The-Palouse-5-hsla { color: hsla(73, 41, 45, 1); };

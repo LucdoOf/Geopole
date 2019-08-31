@@ -1,0 +1,836 @@
+/*OFFICE*/
+
+.office
+{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.office_parameters > *
+{
+    margin-bottom: 5px;
+}
+
+.office_parameters
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.office_fontStyle
+{
+    display: flex;
+    border: 1px solid black;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.office_fontColor
+{
+    margin-right: 10px;
+    display: flex;
+    border: 1px solid black;
+    height: 32px;
+}
+
+.office .office_parameters span
+{
+    background-color: white;
+    border-right: 1px solid #B2B2B2;
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-size: contain;
+}
+
+.office_bold
+{
+    background-image: url("/res/images/office/bold.png");
+}
+
+.office_italic
+{
+    background-image: url("/res/images/office/italic.png");
+}
+
+.office_underline
+{
+    background-image: url("/res/images/office/underline.png");
+}
+
+.office_bar
+{
+    background-image: url("/res/images/office/bar.png");
+}
+
+.office_exponent
+{
+    background-image: url("/res/images/office/exponent.png");
+}
+
+.office_index
+{
+    background-image: url("/res/images/office/index.png");
+}
+
+.office_highlight
+{
+    background-image: url("/res/images/office/highlight.png");
+}
+
+.office_color
+{
+    background-image: url("/res/images/office/color.png");
+}
+
+.office_buttonDown
+{
+    filter: invert(1);
+    background-color: white;
+}
+
+.office_buttonDown_2
+{
+    background-color: black !important;
+}
+
+.office_fontPolicy
+{
+    margin-right: 10px;
+}
+
+.office_fontSize
+{
+    margin-right: 10px;
+}
+
+.office input, select
+{
+    margin-right: 10px;
+}
+
+.office .office_content
+{
+    border: 1px solid #B2B2B2;
+    min-height: 100px;
+    padding: 1%;
+}
+
+.office .office_content:focus {
+    border: 1px solid black;
+    outline-color: black;
+}
+
+.office_color
+{
+    position: relative;
+}
+
+.office_highlight
+{
+    position: relative;
+}
+
+.office .formColor
+{
+    display: flex;
+    border: 1px solid black;
+    background-color: white;
+    position: absolute;
+    box-sizing: border-box;
+    top: 100%;
+}
+
+.hided
+{
+    display: none;
+}
+
+.office .formColor:hover
+{
+    opacity: 1;
+}
+
+.office .office_fontLink, .office_fontImage
+{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.office .office_fontLink .office_fontLinkSpan
+{
+    background-image: url("/res/images/office/link.png");
+}
+
+.office .office_fontLink .office_fontLinkSpan2
+{
+    background-image: url("/res/images/office/unlink.png");
+}
+
+.office .office_fontLink .office_fontLinkInput, .office_fontImage .office_fontImageInput
+{
+    margin-right: 0px;
+}
+
+.office .office_fontLink .office_fontLinkInput:focus, .office_fontImage .office_fontImageInput:focus
+{
+    outline-color: black;
+}
+
+.office .office_fontImage .office_fontImageSpan
+{
+    background-image: url("/res/images/office/image.png");
+}
+
+.office .office_unstyle
+{
+    margin-right: 10px;
+    border: 1px solid black;
+    background-image: url("/res/images/office/unstyle.png");
+    border-right: 1px solid black;
+}
+
+
+/*FORM NUMBER*/
+.formGray
+{
+    opacity: 0.5;
+}
+
+.formNumber
+{
+    position: relative;
+    height: 32px;
+}
+
+.formNumber_input {
+    text-align:center;
+    border: none;
+    width: 64px;
+    height: 28px;
+    border: 1px solid black;
+}
+
+.formNumber input
+{
+    margin: 0px;
+}
+
+.formNumber_input::-webkit-outer-spin-button,
+.formNumber_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.formNumber_container
+{
+    width: 96px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.formNumber_image
+{
+    position: absolute;
+    background-image: url("http://image.noelshack.com/fichiers/2018/51/3/1545255253-textsize.png");
+    width: 96px;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.formNumber_parameters
+{
+    width: 32px;
+    height: 32px;
+}
+
+.formNumber_increment
+{
+    width: 32px;
+    height: 16px;
+    background-image: url("/res/images/office/textSizePlus.png");
+    cursor: pointer;
+}
+
+.formNumber_decrement
+{
+    width: 32px;
+    height: 16px;
+    background-image: url("/res/images/office/textSizeMoins.png");
+    cursor: pointer;
+}
+
+
+/*FORM COLOR*/
+.formColor
+{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.formColor_render
+{
+    min-width: 64px;
+    min-height: 64px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.formColor_container
+{
+    width: 128px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.formColor_color
+{
+    border-radius: 25%;
+    width: 16px;
+    height: 16px;
+    margin: 1px;
+    opacity: 0.7;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.formColor_color:hover
+{
+    opacity: 1;
+}
+
+.formColor_palette
+{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    width: 80px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* The slider itself */
+input[type="range"] {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 128px; /* Full-width */
+    height: 5px; /* Specified height */
+    background: #B2B2B2; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Mouse-over effects */
+input[type="range"]:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: black; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border: 6px solid white;
+    border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: black; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+/* FORM SELECT */
+
+
+.formSelect select
+{
+    -webkit-appearance: none; /* Override default look */
+    display: none;
+}
+
+.formSelect
+{
+    position: relative;
+}
+
+.formSelect_selected
+{
+    position: relative;
+    display: flex;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    width: 96px;
+    height: 32px;
+    align-items: center;
+    cursor: default;
+}
+
+.formSelect_option
+{
+    box-sizing: border-box;
+    display: flex !important;
+    position: absolute;
+    width: 84px;
+    height: 32px;
+    opacity: 0;
+    align-items: center;
+    cursor: pointer;
+    background-color: #E5E5E5;
+    border-right: 1px solid #B2B2B2;
+    border-left: 1px solid #B2B2B2;
+    border-bottom: 1px solid #B2B2B2;
+    padding: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    z-index: 3;
+}
+
+.formSelect_option:hover
+{
+    background-color: #DBDBDB;
+}
+
+.formSelect_option_hided
+{
+    top:100%;
+    display: none !important;
+}
+
+.formSelect_selected:after {
+    position: absolute;
+    content: "";
+    top: 13px;
+    right: 10px;
+    border: 6px solid transparent;
+    border-color: black transparent transparent transparent;
+    cursor: pointer;
+}
+
+
+/* FORM CHECKBOX */
+
+.formCheckbox_container
+{
+    height: 32px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.formCheckbox
+{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: 2px solid black;
+}
+
+.formCheckbox:hover
+{
+    background-color: #E5E5E5;
+}
+
+.formCheckbox:after
+{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.formCheckbox_container input:checked ~ .formCheckbox:after
+{
+    display: block;
+}
+
+.formCheckbox_container input:checked ~ .formCheckbox
+{
+    background-color: black;
+}
+
+.formCheckbox:after {
+    left: 12px;
+    top: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.formCheckbox_container
+{
+    display: flex;
+    align-items: center;
+}
+
+.formCheckbox_container label
+{
+    margin-left: 40px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    width: 0px;
+    overflow: visible;
+}
+
+.formCheckbox_hided
+{
+    display: none;
+}
+
+/* FORM RATING */
+
+.formRating
+{
+    display: flex;
+}
+
+.formRating input
+{
+    display: none;
+    flex-wrap: wrap;
+}
+
+.formRating_star
+{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url("/res/images/star_off.png");
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.formRating_starOn
+{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url("/res/images/star.png");
+    margin-right: 5px;
+}
+
+/* FORM CALENDAR */
+
+.formCalendar
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.formCalendar input
+{
+    display: none;
+}
+
+.formCalendar .week, .dayTitle
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.formCalendar .titleContainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.formCalendar .title
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.formCalendar .dayTitle
+{
+    font-size: 0.9em;
+}
+
+.formCalendar .leftButton, .rightButton
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url("/res/images/right.png");
+    cursor: pointer;
+}
+
+.formCalendar .leftButton
+{
+    left:10%;
+    transform: rotate(180deg);
+}
+
+.formCalendar .rightButton
+{
+    right: 10%;
+}
+
+.formCalendar .dayTitle
+{
+    background-color: black;
+    color: white;
+}
+
+.formCalendar_titleDay
+{
+    width: 14%;
+    height: 16px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.formCalendar_day
+{
+    padding: 5px;
+    display: block;
+    width: 14%;
+    height: 16px;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid var(--white);
+}
+
+.formCalendar_focusDay
+{
+    background-color: black;
+    color: white;
+}
+
+.formCalendar_otherMonthDay
+{
+    color: gray;
+}
+
+.formCalendar_day:hover:not(.formCalendar_focusDay)
+{
+    background-color: var(--themeColor);
+}
+
+/*FORM TEXT */
+
+.formInput
+{
+    position: relative;
+    /*z-index: 2;*/
+}
+
+.formInput .input
+{
+    border: none;
+    padding: 10px;
+    height: 20px;
+    background-color: var(--white);
+    border: 1px solid #E6E6E6;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+}
+
+.formInput_header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.formInput p
+{
+    display: inline;
+    margin: 0px;
+    margin-left: 5px;
+    font-size: 18px;
+    position: absolute;
+    left: 100%;
+    opacity: 0;
+    word-wrap: normal;
+    white-space: nowrap;
+}
+
+.formInput input
+{
+    display: none;
+}
+
+.formInput div:focus
+{
+    outline: none;
+}
+
+.formInput_completionDiv
+{
+    position: absolute;
+    top:100%;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.formInput_completion:hover
+{
+    background-color: #DBDBDB;
+}
+
+.formInput_selectedCompletion
+{
+    background-color: #DBDBDB !important;
+}
+
+.formInput_completion
+{
+    box-sizing: border-box;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    display: flex !important;
+    background-color: #E5E5E5;
+    border-right: 1px solid #B2B2B2;
+    border-left: 1px solid #B2B2B2;
+    border-bottom: 1px solid #B2B2B2;
+    padding: 5px;
+    z-index: 3 !important;
+}
+
+
+
+/*FORM BUTTON */
+
+.formButton
+{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.formButton:hover
+{
+    color: var(--themeColor);
+    cursor: pointer;
+}
+
+/*FORM PASSWORD */
+
+.formPassword
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.formPassword input
+{
+    outline: none;
+    border: none;
+    padding: 10px;
+    height: 20px;
+    background-color: white;
+    border-bottom: 1px solid black;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+}
+
+.formPassword .default
+{
+    position: absolute;
+    top:25%;
+    left:10px;
+    color: rgb(178, 178, 178);
+}
+
+.formPassword .message
+{
+    display: inline;
+    margin: 0px;
+    margin-left: 5px;
+    font-size: 18px;
+    position: absolute;
+    left: 100%;
+    opacity: 0;
+    word-wrap: normal;
+    white-space: nowrap;
+    position: absolute;
+}
+
+/**FORM RADIO**/
+
+.formRadio {
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.formRadio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #808080;
+    border-radius: 50%;
+    transition: 200ms all;
+}
+
+.formRadio:hover input ~ .radio {
+    background-color: #aaa;
+}
+
+.formRadio input:checked ~ .radio {
+    background-color: #404040;
+}

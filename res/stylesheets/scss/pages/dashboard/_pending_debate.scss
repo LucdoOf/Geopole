@@ -1,0 +1,66 @@
+#body21 {
+  h2 {
+    font-weight: normal;
+  }
+  #pending-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    #cover-container {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      @media #{$mobile} {
+        flex-direction: column;
+        align-items: flex-start;
+        p {
+          margin-top: 15px;
+          margin-left: 0 !important;
+        }
+      }
+      p {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: $lightgreen;
+        margin-left: 20px;
+      }
+    }
+    label {
+      width: 100%;
+    }
+    textarea {
+      height: 150px;
+    }
+    #cancel-input {
+      display: none;
+    }
+    #options-ctn {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      input {
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      .debate-option {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: $blue;
+        color: var(--white);
+        border-radius: 1px;
+        height: 50%;
+        cursor: pointer;
+        transition: 200ms all ease;
+        &:hover {
+          background: $darkblue;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}

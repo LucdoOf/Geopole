@@ -1,0 +1,113 @@
+#body17 {
+  background-color: white;
+  border: 1px solid $bordergray;
+  #debate-content {
+    overflow: auto; //Si on enleve la div ne s'expand pas avec le float
+    padding: 10px 0 20px;
+    border-bottom: 1px solid $bordergray;
+    #debate-image {
+      width: 30%;
+      float:left;
+      object-fit: cover;
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  #debate-options {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid $bordergray;
+    padding-bottom: 20px;
+    .debate-option {
+      .name {
+        margin: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: black;
+        background-color: $lightgray;
+      }
+      &.index-0 {
+        .name{background-color: $lightgreen;}
+      }
+      &.index-1 {
+        .name{background-color: $lightred; }
+      }
+      .popularity {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5em;
+        padding: 10px;
+        &:after {
+          content: "%";
+          display: block;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  #debate-responses {
+    form {
+      margin-bottom: 20px;
+      h3 {
+        margin-bottom: 10px;
+      }
+      .select-input {
+        margin-bottom: 10px;
+        @media #{$mobile} {
+          margin-top: 5px;
+          width: 100%;
+        }
+        select {
+          margin-left: 10px;
+          @media #{$mobile} {
+            margin-left: 0;
+            width: 100%;
+          }
+        }
+      }
+      #connect {
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        margin-top: -20px;
+      }
+
+      #response-content {
+        width: 100%;
+        height: 100px;
+        margin-bottom: -5px;
+      }
+      #response-title {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    }
+    #responses-ctn {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      #no-responses {
+        width: 100%;
+        padding: 20px;
+        font-size: 1.2em;
+        text-align: center;
+        background-color: $lightgreen;
+      }
+      .responses {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+    .pager {
+      margin-top: 10px;
+    }
+  }
+}

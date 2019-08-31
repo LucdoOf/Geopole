@@ -1,0 +1,22 @@
+#body19 {
+  background-color: white;
+  border: 1px solid $bordergray;
+  #contact-form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    #contact-content {
+      width: 100%;
+      textarea {
+        height: 200px;
+      }
+    }
+    #contact-submit {
+      width: 100%;
+    }
+  }
+  #paraph {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}

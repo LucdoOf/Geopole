@@ -1,0 +1,203 @@
+header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: 200ms all ease;
+  z-index: 10;
+  @media #{$mobile} {
+    position: fixed;
+    height: 50px;
+    top: 0;
+    width: 100%;
+  }
+  a {
+    font-size: 1.5em;
+  }
+  #hamburger, #profile {
+    display: none;
+    @media #{$mobile} {
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin: 24px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  #menu {
+    background-color: $darkgray;
+    width: 100%;
+    height: 0px;
+    opacity: 0;
+    display: none;
+    transition: 200ms all ease;
+    padding: 30px;
+    box-sizing: border-box;
+    #menu-categories {
+      display: grid;
+      grid-template-columns: auto auto;
+      height: 100%;
+      padding-right: 20px;
+      box-sizing: border-box;
+      .col-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 40px;
+        .menu-category {
+          width: 100%;
+          padding: 10px;
+          text-transform: uppercase;
+          color: white;
+          background-color: $darkergray;
+          cursor: pointer;
+          transition: 200ms all ease;
+          white-space: nowrap;
+          font-size: 16px !important;
+
+          &:hover, &.selected {
+            background-color: lighten($darkergray, 5%);
+          }
+
+          &.more-category {
+            color: $green;
+          }
+        }
+      }
+    }
+    #menu-artc {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      overflow-x: auto;
+      overflow-y: hidden;
+      .article {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &.menu-expanded {
+    #geopole {
+      box-shadow: unset;
+    }
+    #menu {
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: auto auto;
+      height: 200px;
+      opacity: 1;
+    }
+    #header_top {
+      border-bottom: 10px solid $green;
+      overflow-y: hidden;
+    }
+    &.articles-expanded {
+      #artc-link {
+        color: $green !important;
+      }
+    }
+  }
+  #geopole {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    height: 140px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-left: 10px;
+    padding-right: 10px;
+    @media #{$mobile} {
+      background-color: $green;
+      height: auto;
+      padding: 15px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+    z-index: 15;
+    #geopole-link {
+      display: block;
+      font-size: 70px;
+      font-family: "Handlee", "Mistral", sans-serif;
+      color: white;
+      text-align: center;
+      @media #{$mobile} {
+        font-size: 2em;
+        margin-top: 5px;
+        color: #0f3312 !important;
+      }
+    }
+  }
+  #header_top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: relative;
+    background-color: #252729;
+    background-image: url("/res/images/bann.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 200ms all ease;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    height: 100px;
+    @media #{$mobile} {
+      background-image: unset;
+      padding: 0 !important;
+      height: 50px;
+    }
+    nav {
+      @media #{$mobile} {
+        display: none;
+      }
+      ul {
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        li {
+          margin-left: 10px;
+          margin-right: 10px;
+          a {
+            color: white !important;
+          }
+        }
+      }
+    }
+    #header_left {
+      margin-left: 50px;
+      @media #{$mobile} {
+        display: none;
+      }
+      #global-searcher {
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: unset;
+        outline: none;
+        transition: 200ms all ease;
+        &:focus {
+          -webkit-box-shadow: 0px 3px 0px 0px $green;
+          -moz-box-shadow: 0px 3px 0px 0px $green;
+          box-shadow: 0px 3px 0px 0px $green;
+        }
+      }
+    }
+    #header_right {
+      display: flex;
+      flex-direction: row;
+      @media #{$mobile} {
+        display: none;
+      }
+      #connection {
+        order: 2;
+        margin-right: 50px;
+        color: white !important;
+      }
+    }
+  }
+}

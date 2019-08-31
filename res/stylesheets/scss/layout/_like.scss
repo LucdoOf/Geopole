@@ -1,0 +1,43 @@
+.like, .dislike {
+  width: 18px;
+  height: 18px;
+  &.big {
+    width: 25px;
+    height: 25px;
+  }
+  margin: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  &.like {
+    background-image: url("/res/images/svg/like.svg");
+
+    &.pressed {
+      background-image: url("/res/images/svg/like-pressed.svg");
+    }
+  }
+  &.dislike {
+    background-image: url("/res/images/svg/dislike.svg");
+
+    &.pressed {
+      background-image: url("/res/images/svg/dislike-pressed.svg");
+    }
+  }
+  &:not([data-count="0"]) {
+    &:after {
+      display: block;
+      content: attr(data-count);
+      color: $gray;
+      margin-left: 25px;
+      word-break: keep-all;
+    }
+    &.big {
+      &:after {
+        margin-left: 30px;
+      }
+    }
+  }
+}

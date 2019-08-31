@@ -1,0 +1,20 @@
+/* TEAM */
+Main developper: Garofalo Lucas
+Site: lucasg.18@hotmail.fr
+Twitter: @lucasnonime
+Location: Tours, France
+
+Administrator: Darnault Maëva
+Site: maevadarnault@yahoo.fr
+Twitter: @Maevartichaut
+Location: Tours, France
+
+/* THANKS */
+Name: https://www.boreal-business.net/
+
+
+/* SITE */
+Last update:  2019/08/29
+Standards: HTML5, CSS3, PHP7
+Components: jQuery, Facebook PHP SDK, Codebird-php.
+Software: PHPStorm

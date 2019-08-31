@@ -1,0 +1,7 @@
+.tox-tinymce .tox-statusbar__branding {
+  display: none !important; }
+
+.tinymce-mobile-disabled-mask {
+  background: var(--white) !important; }
+
+/*# sourceMappingURL=tinymce.css.map */

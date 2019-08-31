@@ -1,0 +1,104 @@
+.response, .comment {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  &.loading {
+    &:after {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255,255,255,0.8);
+      background-image: url("/res/images/svg/loading.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .profile-image {
+    margin-right: 10px;
+  }
+  margin: 20px 0;
+  box-sizing: border-box;
+  display: flex;
+  border-left: 5px solid $bordergray;
+  padding-left: 15px;
+  flex-direction: row;
+  .right {
+    width: 100%;
+  }
+  .title {
+    font-size: 1.2em;
+    margin-bottom: 4px;
+  }
+  .date, .author {
+    color: $darkgray;
+  }
+  .signature {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    .author {
+      margin-right: 4px;
+    }
+  }
+  .footer {
+    .response-anchor {
+      margin-left: 5px;
+      &.responding {
+        font-weight: bold;
+      }
+    }
+  }
+  .reply-form {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    textarea {
+      width: 100%;
+    }
+    .button {
+      width: fit-content;
+    }
+  }
+  &.index-0 {
+    border-left: 5px solid $lightgreen;
+  }
+  &.index-1 {
+    border-left: 5px solid $lightred;
+  }
+  @media #{$mobile} {
+    border-left-width: 2px;
+  }
+  .response, .comment {
+    border-left: unset !important;
+    padding: 0;
+    margin: 15px 0 0 !important;
+  }
+  .sub-responses {
+    .sub-responses-title {
+      font-weight: bold;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+      &:after {
+        content: "";
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin-left: 8px;
+        background-repeat: no-repeat;
+        background-position: center 1px;
+        background-size: contain;
+        background-image: url("/res/images/svg/arrow-down.svg");
+      }
+    }
+    margin-top: 10px;
+    .sub-response {
+      margin-top: 15px;
+    }
+  }
+}

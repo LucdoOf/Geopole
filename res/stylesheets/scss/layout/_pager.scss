@@ -1,0 +1,31 @@
+.pager {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    margin: 10px;
+  }
+  .actual-page {
+    font-size: 1.2em;
+    margin: 10px;
+  }
+  .first-page,.last-page {
+    text-transform: capitalize;
+    border-bottom: 2px solid $green;
+    padding: 2px;
+  }
+  .previous-page,.next-page {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/res/images/back-arrow-left.svg");
+    transform: rotate(180deg);
+    &:nth-child(1){
+      transform: rotate(0deg);
+    }
+  }
+}

@@ -1,0 +1,220 @@
+#body11 {
+  .formGray {
+    cursor: default !important;
+  }
+  h2 {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  #content_right_header {
+    height: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    #screen_control {
+      margin: 0px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      opacity: 0.7;
+      transition: 250ms all;
+      @media #{$mobile} {
+        display: none;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  #conversations_container {
+    display: flex;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .10);
+    box-sizing: border-box;
+    max-height: 600px;
+    @media #{$mobile} {
+      flex-direction: column;
+    }
+    #conversation_side {
+      width: 30%;
+      border-right: 1px solid rgba(0, 0, 0, .10);
+      box-sizing: border-box;
+      padding: 15px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      @media #{$mobile} {
+        width: 100%;
+        flex-direction: row;
+        overflow-y: hidden;
+        overflow-x: auto;
+      }
+      a {
+        text-align: initial;
+        word-break: break-all;
+        font-size: 20px;
+        padding: 10px;
+        background-color: var(--themeColor);
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        opacity: 0.8;
+        transition: 250ms all;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @media #{$mobile} {
+          font-size: 0;
+          word-break: keep-all;
+          margin: 0 15px 0 0;
+        }
+        &:hover {
+          opacity: 1;
+          border-radius: 15px;
+        }
+        &:after {
+          content: "+";
+          @media #{$mobile} {
+            font-size: 30px;
+          }
+        }
+      }
+      #conversation_list {
+        display: flex;
+        flex-direction: column;
+        @media #{$mobile} {
+          flex-direction: row;
+        }
+        .conversation {
+          background-color: rgba(0,0,0,.03);
+          padding: 10px;
+          width: 100%;
+          box-sizing: border-box;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-bottom: 15px;
+          word-break: break-all;
+          @media #{$mobile} {
+            word-break: keep-all;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 15px 0 0;
+          }
+          .foreigner {
+            font-weight: inherit;
+          }
+          .last_message {
+            font-weight: inherit;
+            text-align: initial;
+            @media #{$mobile} {
+              display: none;
+            }
+          }
+        }
+        .notseen {
+          font-weight: bold !important;
+        }
+        .expanded {
+          background-color: rgba(0,0,0,.07);
+          border-radius: 15px;
+        }
+      }
+    }
+    #conversation_middle {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      @media #{$mobile} {
+        width: 100%;
+      }
+      .scroll_top {
+        box-sizing: border-box;
+        padding: 10px;
+        align-self: center;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      #scrollable_area {
+        overflow-y: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        @media #{$mobile} {
+          max-height: 500px;
+        }
+      }
+      #conversation_bottom {
+        border-top: 1px solid rgba(0, 0, 0, .10);
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        #send {
+          width: 24px;
+          height: 24px;
+          opacity:0.6;
+          cursor: pointer;
+          margin: 0px 15px;
+          transition: 200ms all;
+          &:hover {
+            background-color: var(--themeColor);
+            border-radius:50%;
+          }
+        }
+        #conversation_input {
+          width: 100%;
+          word-break: break-all;
+          outline: none;
+          overflow-x: hidden;
+          overflow-y: auto;
+          max-height: 150px;
+        }
+        .default:after {
+          color: rgba(0, 0, 0, .35);
+          content: "Envoyez un message..";
+          cursor: text;
+        }
+      }
+      #conversation_content {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        .message {
+          padding: 10px;
+          box-sizing: border-box;
+          border-radius: 15px;
+          background-color: rgba(0, 0, 0, .03);
+          display: inline-block;
+          width: fit-content;
+          align-self: flex-start;
+          margin-bottom: 15px;
+          text-align: initial;
+          word-break: break-word;
+          span {
+            color: inherit !important;
+          }
+        }
+        .sended {
+          background-color: var(--themeColor);
+          color: white !important;
+          align-self: flex-end !important;
+        }
+        .first_message,.info {
+          padding: 20px;
+          box-sizing: border-box;
+          align-self: center;
+          text-align: center;
+          background-color: rgba(0, 0, 0, .03);
+        }
+      }
+    }
+  }
+}

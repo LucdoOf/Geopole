@@ -1,0 +1,29 @@
+#body5 #presentation
+{
+  #presentation_content p {
+    margin-top: 20px;
+    background-color: var(--white);
+    border: 1px solid $bordergray;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+  }
+  form {
+    textarea {
+      width: 100%;
+      margin-top: 20px;
+    }
+    #manage-controls {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .anchor {
+        margin-right: 20px;
+      }
+    }
+  }
+  #edit {
+    display: inline-block;
+  }
+}

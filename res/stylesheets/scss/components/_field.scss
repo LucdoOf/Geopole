@@ -1,0 +1,14 @@
+.field {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: fit-content;
+  @media #{$mobile} {
+    width: 100%;
+  }
+  &:not(.no-label) {
+    input, .select-input, textarea, .checkbox-input {
+      margin-top: 7px;
+    }
+  }
+}

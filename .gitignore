@@ -1,0 +1,6 @@
+.idea
+vendor
+sitemap.xml
+upload/images/articles/*
+upload/images/debates/*
+upload/images/profiles/*

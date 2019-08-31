@@ -1,0 +1,69 @@
+#body16 {
+  background-color: white;
+  border: 1px solid $bordergray;
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #cover-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    @media #{$mobile} {
+      flex-direction: column;
+      align-items: flex-start;
+      p {
+        margin-top: 15px;
+        margin-left: 0 !important;
+      }
+    }
+    p {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: $lightgreen;
+      margin-left: 20px;
+    }
+  }
+  #debate-description {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  #debate-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  #options-ctn {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    input {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    .debate-option {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      background-color: $blue;
+      color: var(--white);
+      border-radius: 1px;
+      height: 50%;
+      cursor: pointer;
+      transition: 200ms all ease;
+      &:hover {
+        background: $darkblue;
+        text-decoration: line-through;
+      }
+    }
+  }
+  input[type="submit"] {
+    display: block;
+    margin: 30px auto auto;
+    width: 200px;
+    height: 30px;
+  }
+}

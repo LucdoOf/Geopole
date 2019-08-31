@@ -1,0 +1,49 @@
+@keyframes borderAnim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.anchor {
+  display: inline-block;
+  transition: 200ms all ease;
+  position: relative;
+  &:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: block;
+    height: 2px;
+  }
+  &:hover {
+    color: $darkerGreen;
+    &:after {
+      background-color: $green;
+      width: 100%;
+      animation: 200ms borderAnim ease;
+    }
+  }
+  &.return {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 5px;
+    &:after {
+      bottom: -5px;
+    }
+    &:before {
+      margin-right: 10px;
+      display: block;
+      content: "";
+      width: 16px;
+      height: 16px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("/res/images/back-arrow-left.svg");
+    }
+  }
+}

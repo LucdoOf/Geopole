@@ -1,0 +1,66 @@
+#body20 {
+  #empty-debates {
+    padding: 20px;
+    background-color: $lightgray;
+    text-align: center;
+  }
+  .debate {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    border-bottom: 1px solid $bordergray;
+    cursor: pointer;
+    transition: 200ms all ease;
+    position: relative;
+    &:after {
+      content:"";
+      display: block;
+      position: absolute;
+      top:50%;
+      left:50%;
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      &:after {
+        width: 80px;
+        height: 80px;
+
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        background-color: white;
+        //background-image: url("/res/images/back-arrow-left.svg");
+        background-image: url("/res/images/svg/settings.svg");
+        transform: rotate(180deg) translateX(50%) translateY(50%);
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    .title {
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+    .debate-content {
+      display: flex;
+      flex-direction: row;
+      .image {
+        width: 128px;
+        height: 128px;
+        min-width: 128px;
+        min-height: 128px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      .debate-right {
+        display: flex;
+        flex-direction: column;
+        .description {
+          color: $darkgray;
+          margin-bottom: 10px;
+        }
+        .options {
+          color: $darkgray;
+        }
+      }
+    }
+  }
+}

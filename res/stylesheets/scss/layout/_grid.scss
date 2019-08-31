@@ -1,0 +1,41 @@
+#main-scroller {
+  @media #{$mobile} {
+    margin-top: 50px;
+  }
+}
+section.base-wrapper {
+  &.filled {
+    background-color: white;
+    border: 1px solid $bordergray;
+  }
+  max-width: 1000px;
+  &.medium {
+    max-width: 900px;
+  }
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media #{$mobile} {
+    padding: 40px;
+  }
+  &.padded {
+    padding: 40px;
+  }
+}
+
+section.full-wrapper {
+  width: 100%;
+}
+
+.column-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-wrapper {
+  display: flex;
+  flex-direction: row;
+  &.align {
+    align-items: center;
+  }
+}

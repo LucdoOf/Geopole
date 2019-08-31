@@ -1,0 +1,13 @@
+.message-wrapper {
+  padding: 20px;
+  text-align: center;
+  background-color: $white;
+  box-sizing: border-box;
+  width: 100%;
+  &.bordered {
+    border: 1px solid $bordergray;
+  }
+  &.white {
+    background-color: white;
+  }
+}
