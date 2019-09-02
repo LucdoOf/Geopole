@@ -19,7 +19,7 @@ class Mailer
      */
     const BUSINESS_MAIL = "geopole.business@gmail.com";
     /**
-     * Mail d'envoie
+     * Mail d'envoi
      */
     const NO_REPLY = "noreply@geopole.net";
     /**

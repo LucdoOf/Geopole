@@ -184,7 +184,7 @@
         <div id="footer-bot">
             <div id="made"><div class="text-wrapper">Site indépendant fait avec <img src="/res/images/love.svg" alt="Love"></div> par Maëva Darnault et Lucas Garofalo à Tours</div>
             <small>© Geopole. Tout droits réservés.</small>
-            <small><a href="https://www.geopole.net/privacy.pdf">Politiques de confidentialités</a></small>
+            <small><a href="<?= ABSOLUTE_PATH ?>/privacy.pdf">Politiques de confidentialités</a></small>
         </div>
 	</footer>
 

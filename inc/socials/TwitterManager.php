@@ -18,7 +18,7 @@ class TwitterManager
         Codebird::setConsumerKey(TWITTER_API_KEY, TWITTER_API_KEY_SECRET); // static, see README
         $cb = Codebird::getInstance();
         $cb->setToken(TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET);
-        $link = "https://www.geopole.net/articles/".$article->getSlug();
+        $link = ABSOLUTE_PATH . "/articles/".$article->getSlug();
         $content = $article->getTitle() . "\n";
         $params = [
             'status' => $content.$link

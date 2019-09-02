@@ -27,7 +27,7 @@ class FacebookManager
             '/' . FACEBOOK_PAGE_ID . '/feed',
             array (
                 'message' => $article->getTitle() . "\n\n" . $article->getDescription(),
-                'link' => 'https://www.geopole.net/articles/'.$article->getSlug()
+                'link' => ABSOLUTE_PATH . '/articles/'.$article->getSlug()
             ),
             FACEBOOK_ACC_TOKEN
         );
