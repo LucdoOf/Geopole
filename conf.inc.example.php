@@ -14,3 +14,7 @@ define('IS_DEV', true);
 define('LOGO_SVG_PATH', ABSOLUTE_PATH . "/res/images/svg/logo.svg");
 define('LOGO_PNG_PATH', ABSOLUTE_PATH . "/res/images/svg/logo.png");
 define('LOGO_AMP_PATH', ABSOLUTE_PATH . "/res/images/amp-logo.png");
+define('MYSQL_HOST', "mysql-lucasnonime.alwaysdata.net");
+define('MYSQL_DB', "lucasnonime_blogdb");
+define('MYSQL_USER', "169783");
+define('MYSQL_PASS', "root");

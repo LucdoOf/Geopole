@@ -15,7 +15,7 @@ class SQL
      */
     private static function db(){
         if(isset(self::$db)) return self::$db;
-        $db = new PDO('mysql:host=mysql-lucasnonime.alwaysdata.net;port=3306;dbname=lucasnonime_blogdb;charset=utf8', '169783', 'root');
+        $db = new PDO('mysql:host='.MYSQL_HOST.';port=3306;dbname='.MYSQL_DB.';charset=utf8', MYSQL_USER, MYSQL_PASS);
         if(IS_DEV === true){
             $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
         }
