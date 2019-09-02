@@ -4,3 +4,4 @@ sitemap.xml
 upload/images/articles/*
 upload/images/debates/*
 upload/images/profiles/*
+conf.inc.php
