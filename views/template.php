@@ -171,9 +171,9 @@
 	<footer>
 		<div id="footer-top">
             <div id="socials">
-                <a href="#"><img src="/res/images/facebook.svg" alt="Facebook"></a>
-                <a href="#"><img src="/res/images/instagram.svg" alt="Instagram"></a>
-                <a href="#"><img src="/res/images/twitter.svg" alt="Twitter"></a>
+                <a href="https://www.facebook.com/Géopôle-Articles-et-débats-109412767101979/"><img src="/res/images/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/geopole_site/"><img src="/res/images/instagram.svg" alt="Instagram"></a>
+                <a href="https://twitter.com/GeopoleSite/"><img src="/res/images/twitter.svg" alt="Twitter"></a>
             </div>
             <nav>
                 <a href="/articles">Articles</a>
